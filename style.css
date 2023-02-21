@@ -1,0 +1,272 @@
+body {
+  width: 100%;
+  margin: 0 auto;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  position: relative;
+  color: #6f6f6f;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: #60c5f0;
+  width: 100%;
+}
+
+h2 {
+  color: #60c5f0;
+  margin-bottom: 30px;
+}
+
+#logo {
+  padding: 15px 25px;
+  width: 80px;
+  padding: 25px;
+}
+
+.polozky_navigace {
+  position: absolute;
+}
+
+nav {
+  width: 100%;
+}
+
+nav > ul {
+  display: flex;
+  justify-content: space-evenly;
+  padding-left: 25%;
+  padding-right: 15%;
+  color: whitesmoke;
+  list-style-type: none;
+  padding-right: 15%;
+}
+
+a {
+  color: whitesmoke;
+  text-decoration: none;
+  font-size: 1.4rem;
+}
+
+a:hover {
+  color: #dea4f5;
+}
+
+.sekce_tabulka {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.tabulka {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin: 15px;
+}
+
+.tabulka td,
+.tabulka th {
+  padding: 8px;
+  border: 1px solid #60c5f0;
+}
+
+.tabulka tr:nth-child(even) {
+  background-color: #cce7f3;
+}
+
+.tabulka tr:hover {
+  background-color: #a4d7ed;
+}
+
+.sudy {
+  background-color: #cce7f3;
+}
+
+.tabulka th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #60c5f0;
+  color: whitesmoke;
+}
+
+article {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 7%;
+  padding-right: 7%;
+  text-align: center;
+}
+
+.sekce_formulare {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 95%;
+  margin-left: 2%;
+}
+
+#avatar {
+  border: 1px solid #60c5f0;
+  height: 150px;
+  border-radius: 5px;
+  margin-right: 1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  padding: 0.8rem;
+  margin: 0 0 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #60c5f0;
+}
+
+::placeholder {
+  color: rgb(219, 219, 219);
+}
+
+input[type=text]:focus,
+input[type=number]:focus,
+input[type=tel]:focus,
+textarea:focus,
+select:focus {
+  border: 1px #f595e3 solid !important;
+  box-shadow: 0 0 3px #f595e3 !important;
+  -moz-box-shadow: 0 0 3px #f595e3 !important;
+  -webkit-box-shadow: 0 0 3px #f595e3 !important;
+  outline-offset: 0px !important;
+  outline: none !important;
+}
+
+
+label {
+  padding: 0.4rem 0;
+}
+
+#btn, #btn-delete, #btn-navrat {
+  background: #60c5f0;
+  color: whitesmoke;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  border: none;
+}
+
+#btn:hover, #btn-delete:hover, #btn-navrat:hover {
+  background: #dea4f5;
+  cursor: pointer;
+}
+
+#btn-navrat {
+text-align: center;
+max-width: 250px;
+margin: 0 auto;
+}
+
+.tlacitko {
+  justify-content: center;
+}
+
+.karta_formulare {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20%;
+}
+
+.kolonky_formulare {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.formular_prvni_sloupec {
+  display: flex;
+  flex-direction: column;
+}
+
+.formular_druhy_sloupec {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (max-width: 800px) {
+  .karta_formulare {
+    flex-direction: column;
+    text-align: center;
+  }
+  img {
+    width: 150px;
+    height: auto;
+    align-self: center;
+  }
+  .sekce_formulare {
+    display: flex;
+    justify-content: center;
+  }
+  .formular {
+    align-self: center;
+  }
+  h2 {
+    align-self: center;
+  }
+}
+
+#fialova {
+  height: 15px;
+  width: 15px;
+  background-color: #dea4f5;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+#ruzova {
+  height: 15px;
+  width: 15px;
+  background-color: #f595e3;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+#hraskova {
+  height: 15px;
+  width: 15px;
+  background-color: #d6f58c;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+#zelena {
+  height: 15px;
+  width: 15px;
+  background-color: #b5f5a3;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.barevna_paleta {
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+footer {
+  background: #60c5f0;
+  margin-top: 80px;
+  color: whitesmoke;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}

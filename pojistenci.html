@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Evidence pojistných událostí</title>
+  </head>
+  <body>
+    <header>
+      <section>
+        <img src="./logo_pojisteni_white.png" alt="logo" id="logo" />
+      </section>
+      <nav class="navigace">
+        <ul>
+          <li><a href="#" class="navigace">Pojištěnci</a></li>
+          <li><a href="./o_nas.html" class="navigace">O aplikaci</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div>
+      <section class="sekce_tabulka">
+        <table class="tabulka" id="tab">
+          <thead>
+            <th>Jméno a příjmení</th>
+            <th>Telefon</th>
+            <th>Věk</th>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+      </section>
+    </div>
+    <section class="sekce_formulare">
+      <h2>Nový pojištěnec</h2>
+      <div class="karta_formulare">
+        <img src="./pngwing.com-80.png" alt="" id="avatar" />
+        <form class="formular">
+          <section class="kolonky_formulare">
+            <div class="formular_prvni_sloupec">
+              <label for="jmeno">Jméno</label>
+              <!-- Zdá se, že atribut required funguje jen při komunikaci se serverem -->
+              <input type="text" id="jmeno" placeholder="Jan" required/>
+              <label for="prijmeni">Příjmení</label>
+              <input type="text" id="prijmeni" placeholder="Novák" required/>
+            </div>
+            <div class="formular_druhy_sloupec">
+              <label for="vek">Věk</label>
+              <input type="number" id="vek" placeholder="40" required/>
+              <label for="telefon">Telefon</label>
+              <input type="tel" id="telefon" placeholder="+420 xxx xxx xxx" required/>
+            </div>
+          </section>
+          <input type="submit" id="btn" value="uložit" />
+          <input type="submit" id="btn-delete" value="smazat data" />
+          <h3></h3>
+        </form>
+      </div>
+    </section>
+    <footer>
+      <div>
+        <section class="barevna_paleta">
+          <span id="fialova"></span>
+          <span id="ruzova"></span>
+          <span id="modra"></span>
+          <span id="hraskova"></span>
+          <span id="zelena"></span>
+        </section>
+      </div>
+      <div>
+        <p>By Lucie ♥</p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="Pojistenec.js"></script>
+  </body>
+</html>
+
